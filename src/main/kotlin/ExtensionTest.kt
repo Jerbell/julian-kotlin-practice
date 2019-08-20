@@ -6,6 +6,8 @@ fun List<Int>.sum(): Int {
     return result
 }
 
+fun String?.isEmptyOrNull(): Boolean = this == null || this.isEmpty()
+
 fun main() {
     val sum = listOf(1, 2, 3).sum()
     println(sum)    // 6
