@@ -18,7 +18,6 @@ tasks.withType<KotlinCompile>().configureEach {
 }
 
 tasks.withType<Test>().configureEach {
-    println("Configuring $name in project ${project.name} to use JUnit")
+    println("Configuring $name in project ${project.name} to use JUnit 5")
     useJUnitPlatform()
 }
-
